@@ -29,4 +29,4 @@ undelivered_shipments as(
     AND DELIVERY_DATE IS NULL
     AND SHIPMENT_DATE IS NULL
 )
-select * from undelivered_shipments;
+select * from undelivered_shipments

@@ -36,4 +36,4 @@ late_shipments as(
     WHERE SHIPMENT_DATE >= DATEADD(day, 6, ORDER_DATE)
     AND DELIVERY_DATE IS NULL
 )
-select * from late_shipments;
+select * from late_shipments
