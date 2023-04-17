@@ -1,5 +1,3 @@
-select * from staging.external_staging.ORDERS_TABLE;
-
 WITH orders_2 AS (
     select
         order_id,
@@ -25,10 +23,10 @@ merged_2 as(
     select * from shipment_deliveries_2
     left join orders_2 using (order_id)
 ),
-final_2 as(
+undelivered_shipments as(
     SELECT * FROM merged_2 
     WHERE '2022-09-01' >= DATEADD(day, 15, ORDER_DATE)
     AND DELIVERY_DATE IS NULL
     AND SHIPMENT_DATE IS NULL
 )
-select * from final_2;
+select * from undelivered_shipments;
