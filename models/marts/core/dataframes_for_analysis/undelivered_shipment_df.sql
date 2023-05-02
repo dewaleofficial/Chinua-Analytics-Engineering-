@@ -8,7 +8,7 @@ WITH orders_2 AS (
         quantity,
         total_price
 
-    FROM staging.external_staging.ORDERS_TABLE
+    FROM staging.dewale_analytics.ORDERS_TABLE
 ),
 shipment_deliveries_2 AS (
     select  	
@@ -17,7 +17,7 @@ shipment_deliveries_2 AS (
         shipment_date,
         delivery_date
 
-    FROM staging.external_staging.SHIPMENT_DELIVERIES_TABLE
+    FROM staging.dewale_analytics.SHIPMENT_DELIVERIES_TABLE
 ),
 merged_2 as(
     select * from shipment_deliveries_2
@@ -29,4 +29,4 @@ undelivered_shipments as(
     AND DELIVERY_DATE IS NULL
     AND SHIPMENT_DATE IS NULL
 )
-select * from undelivered_shipments;
+select * from undelivered_shipments
