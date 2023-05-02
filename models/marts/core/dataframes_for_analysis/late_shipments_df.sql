@@ -8,14 +8,14 @@ WITH orders AS (
         $6 as quantity,
         $7 as total_price
         
-    FROM staging.external_staging.ORDERS_TABLE
+    FROM staging.dewale_analytics.ORDERS_TABLE
 ),
 reviews AS (
     select	
         $1 as review,
         $2 as product_id
 
-   FROM staging.external_staging.REVIEWS_TABLE
+   FROM staging.dewale_analytics.REVIEWS_TABLE
 ),
 shipment_deliveries AS (
     select
@@ -24,7 +24,7 @@ shipment_deliveries AS (
         $3 as shipment_date,
         $4 as delivery_date
 
-    FROM staging.external_staging.SHIPMENT_DELIVERIES_TABLE
+    FROM staging.dewale_analytics.SHIPMENT_DELIVERIES_TABLE
 ),
 merged as(
     select * from shipment_deliveries
