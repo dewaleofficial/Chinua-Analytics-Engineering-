@@ -12,7 +12,6 @@ select
        (SELECT  (THREE_STAR/count_reviews) *100  FROM {{ref('performance_aggregate_df')}} LIMIT 1) as pct_three_star_review,
        (SELECT  (FOUR_STAR/count_reviews) *100  FROM {{ref('performance_aggregate_df')}} LIMIT 1) as pct_four_star_review,
        (SELECT  (FIVE_STAR/count_reviews) *100 FROM {{ref('performance_aggregate_df')}} LIMIT 1) as pct_five_star_review,
-       (SELECT  (FIVE_STAR/count_reviews) *100 FROM {{ref('performance_aggregate_df')}} LIMIT 1) as pct_five_star_review,
        ((SELECT COUNT(ORDER_ID) FROM {{ref('early_shipment')}}
                 WHERE PRODUCT_ID = (SELECT PRODUCT_ID FROM {{ref('performance_aggregate_df')}} LIMIT 1))/ ((SELECT COUNT(ORDER_ID) FROM {{ref('all_shipment')}}
                 WHERE PRODUCT_ID = (SELECT PRODUCT_ID FROM {{ref('performance_aggregate_df')}} LIMIT 1)))*100) as pct_early_shipments,
