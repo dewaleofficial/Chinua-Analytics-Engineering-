@@ -30,3 +30,5 @@ I will be using the following tools:
 -	Documentation of data and process with Dbt.
 ### 6.	Connect Visualization Tool to snowflake.
 -	Visualize Insights and Kpis.
+The Visualization Link is shown below
+[https://docs.google.com/document/d/15Szq3GzXVidCvuW0Hoc3H9z0dko4XuT7UpePVA-Culo/edit?usp=sharing]: https://docs.google.com/document/d/15Szq3GzXVidCvuW0Hoc3H9z0dko4XuT7UpePVA-Culo/edit?usp=sharing
