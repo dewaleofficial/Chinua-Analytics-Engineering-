@@ -28,7 +28,7 @@ I will be using the following tools:
 -	Generate necessary KPIS for various stakeholders.
 -	Automate DBT process with Dbt Jobs
 -	Documentation of data and process with Dbt.
-### 6.	Connect Visualization Tool to snowflake.
+### 6.	Connect Visualization Tool (Power BI) to snowflake.
 -	Visualize Insights and Kpis.
-The Visualization Link is shown below
+The Visualization Link is shown below. 
 [https://docs.google.com/document/d/15Szq3GzXVidCvuW0Hoc3H9z0dko4XuT7UpePVA-Culo/edit?usp=sharing]: https://docs.google.com/document/d/15Szq3GzXVidCvuW0Hoc3H9z0dko4XuT7UpePVA-Culo/edit?usp=sharing
