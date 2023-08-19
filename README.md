@@ -1,6 +1,3 @@
-# Data2Bot_Accessment
-
-As the sole Analytics Engineer for Chambua Inc, I need to understand the data infrastructure and Business data I will be dealing with. 
 I will be using the following tools:
 ### Python – Extract and Load
 ### SQL – Transformation
